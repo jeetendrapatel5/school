@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Programs | Excellence in Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        accent: '#1e40af', // Deep Blue
+                        gold: '#b45309'   // Academic Gold
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-slate-900 font-sans antialiased">
+
+    <header class="bg-slate-50 border-b border-slate-100 py-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="flex justify-center mb-6">
+                <div class="h-1 w-20 bg-gold rounded-full"></div>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-serif text-slate-900 mb-6 italic">Academic Programs</h1>
+            <p class="text-lg text-slate-500 uppercase tracking-widest font-medium">Pathways to Global Success</p>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-2 gap-12">
+            
+            <div class="relative p-8 rounded-3xl bg-slate-50 border border-slate-200 overflow-hidden group">
+                <div class="relative z-10">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="text-5xl font-serif text-gold/20 group-hover:text-gold/40 transition-colors">VI-VIII</span>
+                        <h2 class="text-2xl font-bold">Middle School</h2>
+                    </div>
+                    <p class="text-slate-600 mb-8 italic">The Foundation Years</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm">
+                            <i data-lucide="book-marked" class="text-accent w-5 h-5"></i>
+                            <span class="text-sm font-semibold">Core Curriculum (5 Subjects)</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm">
+                            <i data-lucide="monitor" class="text-accent w-5 h-5"></i>
+                            <span class="text-sm font-semibold">Compulsory Computer Education</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm">
+                            <i data-lucide="palette" class="text-accent w-5 h-5"></i>
+                            <span class="text-sm font-semibold">Integrated Art, Craft & Values</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative p-8 rounded-3xl bg-accent text-white overflow-hidden shadow-2xl">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <i data-lucide="graduation-cap" class="w-32 h-32"></i>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="text-5xl font-serif text-white/20">IX-X</span>
+                    <h2 class="text-2xl font-bold">Secondary School</h2>
+                </div>
+                <p class="text-blue-100 mb-8 italic">State Board Excellence</p>
+                
+                <div class="grid grid-cols-2 gap-4 text-sm font-medium">
+                    <div class="border border-white/20 p-4 rounded-xl hover:bg-white/10 transition-colors">
+                        <i data-lucide="check-square" class="mb-2 w-4 h-4 text-gold"></i>
+                        Regular Feedback
+                    </div>
+                    <div class="border border-white/20 p-4 rounded-xl hover:bg-white/10 transition-colors">
+                        <i data-lucide="compass" class="mb-2 w-4 h-4 text-gold"></i>
+                        Career Guidance
+                    </div>
+                    <div class="border border-white/20 p-4 rounded-xl hover:bg-white/10 transition-colors">
+                        <i data-lucide="users" class="mb-2 w-4 h-4 text-gold"></i>
+                        Board Coaching
+                    </div>
+                    <div class="border border-white/20 p-4 rounded-xl hover:bg-white/10 transition-colors">
+                        <i data-lucide="layout" class="mb-2 w-4 h-4 text-gold"></i>
+                        Comprehensive Maps
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-slate-900 py-24 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-white text-3xl md:text-5xl font-serif mb-4 italic">Higher Secondary</h2>
+                <div class="inline-block px-4 py-1 bg-gold/20 border border-gold/30 text-gold rounded-full text-xs font-bold tracking-widest uppercase">
+                    Instruction Medium: English Only
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-[2rem] hover:border-gold/50 transition-all duration-500">
+                    <h3 class="text-gold font-bold mb-2">GROUP I</h3>
+                    <h4 class="text-white text-2xl font-serif mb-6">Mathematics Stream</h4>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-slate-300"><i data-lucide="atom" class="w-4 h-4 text-gold"></i> Physics</li>
+                        <li class="flex items-center gap-3 text-slate-300"><i data-lucide="beaker" class="w-4 h-4 text-gold"></i> Chemistry</li>
+                        <li class="flex items-center gap-3 text-slate-300"><i data-lucide="code" class="w-4 h-4 text-gold"></i> Computer Science</li>
+                        <li class="flex items-center gap-3 text-slate-300"><i data-lucide="variable" class="w-4 h-4 text-gold"></i> Mathematics</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-[2rem] hover:border-gold/50 transition-all duration-500 transform lg:-translate-y-4">
+                    <h3 class="text-gold font-bold mb-2">GROUP II</h3>
+                    <h4 class="text-white text-2xl font-serif mb-6">Commerce Stream A</h4>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-slate-300"><i data-lucide="bar-chart-3" class="w-4 h-4 text-gold"></i> Accountancy</li>
+                        <li class="flex items-center gap-3 text-slate-300"><i data-lucide="pie-chart" class="w-4 h-4 text-gold"></i> Economics</li>
+                        <li class="flex items-center gap-3 text-slate-300"><i data-lucide="briefcase" class="w-4 h-4 text-gold"></i> Commerce</li>
+                        <li class="flex items-center gap-3 text-slate-300"><i data-lucide="calculator" class="w-4 h-4 text-gold"></i> Business Maths & Stats</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-[2rem] hover:border-gold/50 transition-all duration-500">
+                    <h3 class="text-gold font-bold mb-2">GROUP III</h3>
+                    <h4 class="text-white text-2xl font-serif mb-6">Commerce Stream B</h4>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-slate-300"><i data-lucide="bar-chart-3" class="w-4 h-4 text-gold"></i> Accountancy</li>
+                        <li class="flex items-center gap-3 text-slate-300"><i data-lucide="pie-chart" class="w-4 h-4 text-gold"></i> Economics</li>
+                        <li class="flex items-center gap-3 text-slate-300"><i data-lucide="briefcase" class="w-4 h-4 text-gold"></i> Commerce</li>
+                        <li class="flex items-center gap-3 text-slate-300"><i data-lucide="layout" class="w-4 h-4 text-gold"></i> Computer Applications</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="mt-16 text-center">
+                <p class="text-slate-400 text-sm mb-6 uppercase tracking-[0.3em]">Supplementary Curriculum</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="px-6 py-2 rounded-full border border-white/10 text-white text-sm">Environmental Science</span>
+                    <span class="px-6 py-2 rounded-full border border-white/10 text-white text-sm">Community Service</span>
+                    <span class="px-6 py-2 rounded-full border border-white/10 text-white text-sm">Value Education</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 text-center">
+        <h3 class="text-2xl font-serif mb-8">Enrolling for the Academic Year 2026-27</h3>
+        <button class="bg-accent text-white px-10 py-4 rounded-full font-bold hover:shadow-xl hover:shadow-blue-200 transition-all active:scale-95">
+            Download Detailed Prospectus
+        </button>
+    </section>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

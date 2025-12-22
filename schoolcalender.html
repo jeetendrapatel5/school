@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Activities | A Year of Celebration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Marcellus', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#fafaf9] text-slate-900 font-sans antialiased">
+
+    <section class="pt-24 pb-16 px-6 bg-slate-900 text-white overflow-hidden relative">
+        <div class="absolute inset-0 opacity-20">
+            <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="90%" cy="10%" r="200" stroke="white" stroke-width="1"/>
+                <circle cx="10%" cy="80%" r="150" stroke="white" stroke-width="1"/>
+            </svg>
+        </div>
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <h2 class="text-amber-400 font-bold tracking-[0.3em] uppercase text-xs mb-4">School Calendar</h2>
+            <h1 class="text-5xl md:text-6xl font-serif mb-6 italic">A Year Full of Learning <br>& Celebration</h1>
+            <p class="text-slate-400 max-w-2xl mx-auto text-lg font-light">
+                Beyond textbooks, we nurture the soul and spirit through a vibrant tapestry of cultural, academic, and social activities.
+            </p>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white rounded-[2.5rem] p-10 border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
+                <div class="w-12 h-12 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600 mb-8 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                    <i data-lucide="book-open-check"></i>
+                </div>
+                <h3 class="text-2xl font-serif mb-6">Academic Milestones</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3 text-sm text-slate-600">
+                        <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span> Quarterly & Half-Yearly Exams
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-slate-600">
+                        <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span> Annual Final Assessments
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-slate-600">
+                        <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span> Unit Tests & Periodic Reviews
+                    </li>
+                    <li class="bg-indigo-50 p-4 rounded-xl mt-4">
+                        <p class="text-xs font-bold text-indigo-700 uppercase mb-1">Parent Connection</p>
+                        <p class="text-xs text-indigo-900/70 italic">Open Days for regular interaction and feedback.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-[2.5rem] p-10 border border-slate-100 shadow-sm hover:shadow-xl transition-all group lg:col-span-2">
+                <div class="flex flex-col md:flex-row gap-10">
+                    <div class="md:w-1/3">
+                        <div class="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-600 mb-8 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                            <i data-lucide="party-popper"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif mb-4">Festivals & Culture</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">Honoring our diverse heritage through grand celebrations and religious observances.</p>
+                    </div>
+                    <div class="md:w-2/3 grid grid-cols-2 gap-4">
+                        <div class="p-4 border border-slate-50 rounded-2xl bg-slate-50/50">
+                            <p class="font-bold text-xs mb-2 text-slate-400 uppercase tracking-tighter">National Days</p>
+                            <p class="text-sm font-semibold">Independence & Republic Day</p>
+                        </div>
+                        <div class="p-4 border border-slate-50 rounded-2xl bg-slate-50/50">
+                            <p class="font-bold text-xs mb-2 text-slate-400 uppercase tracking-tighter">Tamil Heritage</p>
+                            <p class="text-sm font-semibold">Pongal & Tamil New Year</p>
+                        </div>
+                        <div class="p-4 border border-slate-50 rounded-2xl bg-orange-50/50 border-orange-100">
+                            <p class="font-bold text-xs mb-2 text-orange-700 uppercase tracking-tighter">Spiritual Significance</p>
+                            <p class="text-sm font-semibold text-orange-900">Mahaveer Jayanthi & Paryushan</p>
+                        </div>
+                        <div class="p-4 border border-slate-50 rounded-2xl bg-slate-50/50">
+                            <p class="font-bold text-xs mb-2 text-slate-400 uppercase tracking-tighter">General Festivals</p>
+                            <p class="text-sm font-semibold">Deepavali & Gandhi Jayanthi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-[2.5rem] p-10 border border-slate-100 shadow-sm hover:shadow-xl transition-all group lg:col-span-2">
+                <div class="w-12 h-12 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600 mb-8 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                    <i data-lucide="map"></i>
+                </div>
+                <h3 class="text-2xl font-serif mb-6">Beyond Campus</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl text-sm font-medium">
+                        <i data-lucide="tent" class="w-4 h-4 text-emerald-600"></i> NCC / NSS Camps
+                    </div>
+                    <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl text-sm font-medium">
+                        <i data-lucide="compass" class="w-4 h-4 text-emerald-600"></i> Scout Jamborees
+                    </li>
+                    <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl text-sm font-medium">
+                        <i data-lucide="bus" class="w-4 h-4 text-emerald-600"></i> Educational Field Trips
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 rounded-[2.5rem] p-10 text-white lg:col-span-2 relative overflow-hidden">
+                <div class="absolute bottom-0 right-0 p-10 opacity-10">
+                    <i data-lucide="heart-handshake" class="w-40 h-40"></i>
+                </div>
+                <div class="relative z-10">
+                    <h3 class="text-2xl font-serif mb-8 text-amber-400 italic">Social Responsibility & Values</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="leaf" class="w-5 h-5 text-emerald-400"></i>
+                                <div>
+                                    <p class="font-bold text-sm">Environmental Awareness</p>
+                                    <p class="text-xs text-slate-400">Regular drives and green initiatives.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="traffic-cone" class="w-5 h-5 text-amber-400"></i>
+                                <div>
+                                    <p class="font-bold text-sm">Road Safety</p>
+                                    <p class="text-xs text-slate-400">Campaigns for community awareness.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="sparkles" class="w-5 h-5 text-blue-400"></i>
+                                <div>
+                                    <p class="font-bold text-sm">Chaturmas & Reflection</p>
+                                    <p class="text-xs text-slate-400">Periods of spiritual growth and forgiveness.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="activity" class="w-5 h-5 text-rose-400"></i>
+                                <div>
+                                    <p class="font-bold text-sm">Health & Hygiene</p>
+                                    <p class="text-xs text-slate-400">Consistent awareness and health drives.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mb-24">
+        <div class="bg-amber-50 border border-amber-100 rounded-[2rem] p-8 text-center">
+            <p class="text-amber-900 font-serif italic text-lg">
+                "Integration of Value Education in every aspect of school life."
+            </p>
+        </div>
+    </section>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

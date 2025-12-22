@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports & Athletics | Champions Are Made Here</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .sport-card:hover .sport-overlay { opacity: 1; transform: translateY(0); }
+        .trophy-glow { filter: drop-shadow(0 0 15px rgba(234, 179, 8, 0.3)); }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-white font-sans antialiased">
+
+    <section class="relative py-24 px-6 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-blue-600/20 to-transparent"></div>
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <h2 class="text-blue-400 font-bold tracking-widest uppercase mb-4">Athletics Program</h2>
+            <h1 class="text-6xl md:text-8xl font-display uppercase italic mb-6">Champions Are <span class="text-blue-500">Made Here</span></h1>
+            <div class="h-2 w-32 bg-blue-600 mx-auto rounded-full"></div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 pb-24 grid md:grid-cols-3 gap-8">
+        
+        <div class="space-y-6">
+            <div class="flex items-center gap-3 border-l-4 border-blue-600 pl-4">
+                <i data-lucide="trophy" class="text-blue-500"></i>
+                <h3 class="font-display text-2xl uppercase tracking-wider">Outdoor Arena</h3>
+            </div>
+            <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 hover:border-blue-500/50 transition-all group">
+                <ul class="space-y-4">
+                    <li class="flex justify-between items-center group/item">
+                        <span class="text-slate-300">Cricket</span>
+                        <span class="text-[10px] bg-blue-900/50 text-blue-300 px-2 py-1 rounded">Galada Trophy</span>
+                    </li>
+                    <li class="flex justify-between items-center">
+                        <span class="text-slate-300">Volleyball</span>
+                        <span class="text-[10px] bg-blue-900/50 text-blue-300 px-2 py-1 rounded">Rolling Trophy</span>
+                    </li>
+                    <li class="flex justify-between items-center text-slate-300">Hockey <span>•</span></li>
+                    <li class="flex justify-between items-center text-slate-300">Kabaddi <span>•</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="space-y-6">
+            <div class="flex items-center gap-3 border-l-4 border-emerald-500 pl-4">
+                <i data-lucide="activity" class="text-emerald-500"></i>
+                <h3 class="font-display text-2xl uppercase tracking-wider">Indoor & Wellness</h3>
+            </div>
+            <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="text-center p-3 bg-slate-900/50 rounded-xl">
+                        <i data-lucide="swords" class="w-5 h-5 mx-auto mb-2 text-emerald-400"></i>
+                        <p class="text-xs uppercase font-bold">Chess</p>
+                    </div>
+                    <div class="text-center p-3 bg-slate-900/50 rounded-xl">
+                        <i data-lucide="zap" class="w-5 h-5 mx-auto mb-2 text-emerald-400"></i>
+                        <p class="text-xs uppercase font-bold">Karate</p>
+                    </div>
+                </div>
+                <div class="mt-4 p-4 bg-emerald-900/20 border border-emerald-500/20 rounded-xl">
+                    <p class="text-sm text-emerald-300 italic">"Yoga & Meditation: Standard practice for mental clarity and focus."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-6">
+            <div class="flex items-center gap-3 border-l-4 border-orange-500 pl-4">
+                <i data-lucide="medal" class="text-orange-500"></i>
+                <h3 class="font-display text-2xl uppercase tracking-wider">Competition</h3>
+            </div>
+            <div class="bg-orange-600 p-6 rounded-2xl shadow-xl shadow-orange-900/20">
+                <h4 class="font-bold mb-4 uppercase text-sm tracking-widest">Upcoming Events</h4>
+                <div class="space-y-3">
+                    <div class="bg-white/10 p-3 rounded-lg flex items-center gap-3 text-sm">
+                        <i data-lucide="calendar" class="w-4 h-4"></i> Inter-house Matches
+                    </div>
+                    <div class="bg-white/10 p-3 rounded-lg flex items-center gap-3 text-sm">
+                        <i data-lucide="map-pin" class="w-4 h-4"></i> District Participation
+                    </div>
+                    <div class="bg-white/20 p-3 rounded-lg flex items-center gap-3 text-sm font-bold">
+                        <i data-lucide="flag" class="w-4 h-4"></i> Annual Sports Day
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white text-slate-900 py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12">
+                <h2 class="font-display text-4xl uppercase mb-2">The Wall of Fame</h2>
+                <p class="text-slate-500 uppercase tracking-widest text-xs font-bold">Endowments for Sporting Excellence</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="border-2 border-slate-100 p-6 rounded-3xl hover:border-yellow-500 transition-all duration-300 group">
+                    <i data-lucide="award" class="w-10 h-10 text-yellow-500 mb-4 trophy-glow"></i>
+                    <h4 class="font-bold text-lg leading-tight mb-2">Sri Siremul Hirachand Cup</h4>
+                    <p class="text-slate-400 text-xs uppercase tracking-tighter">Awarded to: Best Sportsman</p>
+                </div>
+                <div class="border-2 border-slate-100 p-6 rounded-3xl hover:border-yellow-500 transition-all duration-300">
+                    <i data-lucide="shield" class="w-10 h-10 text-yellow-600 mb-4"></i>
+                    <h4 class="font-bold text-lg leading-tight mb-2 text-slate-800">Sri R.C. Bohra Cup</h4>
+                    <p class="text-slate-400 text-xs uppercase tracking-tighter">Awarded to: Best House</p>
+                </div>
+                <div class="border-2 border-slate-100 p-6 rounded-3xl hover:border-yellow-500 transition-all duration-300">
+                    <i data-lucide="star" class="w-10 h-10 text-yellow-600 mb-4"></i>
+                    <h4 class="font-bold text-lg leading-tight mb-2 text-slate-800">Sri Singhvi Award</h4>
+                    <p class="text-slate-400 text-xs uppercase tracking-tighter font-bold text-blue-600">Best NCC Cadet</p>
+                </div>
+                <div class="bg-slate-900 text-white p-6 rounded-3xl flex flex-col justify-center items-center text-center">
+                    <div class="flex -space-x-2 mb-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-600 border-2 border-slate-900"></div>
+                        <div class="w-8 h-8 rounded-full bg-emerald-600 border-2 border-slate-900"></div>
+                        <div class="w-8 h-8 rounded-full bg-orange-600 border-2 border-slate-900"></div>
+                    </div>
+                    <p class="text-xs uppercase font-bold tracking-widest">Rolling Trophies</p>
+                    <p class="text-[10px] text-slate-400 mt-2">Cricket • Volleyball • Kabaddi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

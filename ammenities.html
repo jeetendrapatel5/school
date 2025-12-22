@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastructure - Excellence Meets Innovation</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        school: {
+                            900: '#0f172a', // Slate 900
+                            800: '#1e293b', // Slate 800
+                            blue: '#2563eb', // Standard Blue
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Custom animation for fade-in */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Stagger animations */
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900">
+
+    <header class="relative bg-school-900 text-white py-24 px-6 sm:px-12 lg:px-24 overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0 100 C 20 0 50 0 100 100 Z" fill="white" />
+            </svg>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto text-center fade-in-up">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-sm font-medium mb-6 tracking-wide uppercase">
+                World-Class Amenities
+            </span>
+            <h1 class="text-4xl md:text-6xl font-serif font-bold mb-6 leading-tight">
+                Where Excellence <br/>Meets Innovation
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+                We have crafted an environment in Chennai that blends tradition with cutting-edge technology, ensuring every student has the tools to succeed.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-16 -mt-10 relative z-20">
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+            
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 group fade-in-up delay-100">
+                <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors duration-300">
+                    <i data-lucide="monitor" class="w-6 h-6 text-blue-600 group-hover:text-white transition-colors duration-300"></i>
+                </div>
+                <h3 class="text-2xl font-serif font-bold mb-4 text-slate-900">Smart Learning Spaces</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-slate-600">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 shrink-0 mt-0.5"></i>
+                        <span>Air-conditioned smart classrooms</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-600">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 shrink-0 mt-0.5"></i>
+                        <span>Interactive touch-screen boards</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-600">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 shrink-0 mt-0.5"></i>
+                        <span>High-end multimedia projectors</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-600">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 shrink-0 mt-0.5"></i>
+                        <span>Spacious, well-ventilated layout</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 group fade-in-up delay-200">
+                <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition-colors duration-300">
+                    <i data-lucide="cpu" class="w-6 h-6 text-indigo-600 group-hover:text-white transition-colors duration-300"></i>
+                </div>
+                <h3 class="text-2xl font-serif font-bold mb-4 text-slate-900">Advanced Computer Labs</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-slate-600">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 shrink-0 mt-0.5"></i>
+                        <span>Fully AC with 24-hour power backup</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-600">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 shrink-0 mt-0.5"></i>
+                        <span>High-speed internet & modern dev tools</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-600">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 shrink-0 mt-0.5"></i>
+                        <span>Computer Science as exam subject</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-600">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 shrink-0 mt-0.5"></i>
+                        <span>Theory + Practical integration</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 md:p-12 mb-8 relative overflow-hidden fade-in-up delay-300">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-emerald-50 rounded-full -mr-32 -mt-32 opacity-50 blur-3xl pointer-events-none"></div>
+            
+            <div class="flex flex-col md:flex-row gap-12 items-start relative z-10">
+                <div class="md:w-1/3">
+                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="flask-conical" class="w-6 h-6 text-emerald-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-900">World-Class Science Wing</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Our laboratories are designed to spark curiosity. From chemical reactions to biological exploration, we provide state-of-the-art equipment for hands-on learning.
+                    </p>
+                </div>
+                
+                <div class="md:w-2/3 grid sm:grid-cols-3 gap-6">
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-emerald-300 transition-colors">
+                        <h5 class="font-bold text-slate-800 mb-2">Physics</h5>
+                        <p class="text-xs text-slate-500">State-of-the-art equipment for experimental understanding.</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-emerald-300 transition-colors">
+                        <h5 class="font-bold text-slate-800 mb-2">Chemistry</h5>
+                        <p class="text-xs text-slate-500">Modern high-end setup for budding scientists.</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-emerald-300 transition-colors">
+                        <h5 class="font-bold text-slate-800 mb-2">Biology</h5>
+                        <p class="text-xs text-slate-500">Comprehensive facilities for life sciences exploration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+            
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:-translate-y-1 transition-transform duration-300 fade-in-up delay-100">
+                <i data-lucide="book-open" class="w-8 h-8 text-amber-600 mb-6"></i>
+                <h4 class="text-xl font-bold mb-3 text-slate-800">Library & Resources</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    An extensive collection supporting curriculum and encouraging a deep reading culture among students.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:-translate-y-1 transition-transform duration-300 fade-in-up delay-200">
+                <i data-lucide="shield-check" class="w-8 h-8 text-rose-600 mb-6"></i>
+                <h4 class="text-xl font-bold mb-3 text-slate-800">Safety First</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    91+ CCTV cameras, strict visitor protocols, and trained security personnel ensuring total peace of mind.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:-translate-y-1 transition-transform duration-300 fade-in-up delay-300">
+                <i data-lucide="heart-pulse" class="w-8 h-8 text-cyan-600 mb-6"></i>
+                <h4 class="text-xl font-bold mb-3 text-slate-800">Health & Hygiene</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    RO purified water, spotless restrooms, first-aid trained staff, and regular student health check-ups.
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-8 md:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8 shadow-lg fade-in-up delay-100">
+            <div class="md:w-2/3">
+                <div class="flex items-center gap-3 mb-4">
+                    <i data-lucide="wifi" class="w-6 h-6 text-blue-400"></i>
+                    <span class="text-blue-300 font-medium tracking-wide text-sm uppercase">Future Ready</span>
+                </div>
+                <h3 class="text-2xl md:text-3xl font-serif font-bold mb-4">Seamless Digital Integration</h3>
+                <p class="text-slate-300 mb-6 leading-relaxed">
+                    We have fully digitalized school records since 2019. We bridge the gap between home and school with SMS updates, online assessments, and a dynamic web presence.
+                </p>
+                <button class="bg-white text-slate-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl">
+                    Access Parent Portal
+                </button>
+            </div>
+            
+            <div class="md:w-1/3 flex justify-center">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-blue-500 blur-2xl opacity-20 rounded-full"></div>
+                    <div class="relative bg-white/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl">
+                        <div class="space-y-3">
+                            <div class="h-2 w-32 bg-white/20 rounded-full"></div>
+                            <div class="h-2 w-24 bg-white/20 rounded-full"></div>
+                            <div class="h-2 w-28 bg-white/20 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-center py-8 text-slate-400 text-sm">
+        <p>&copy; 2024 School Infrastructure Preview. Designed with care.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

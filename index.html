@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG Jain School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            900: '#002855', // Deep academic navy
+                            800: '#003366',
+                        },
+                        gold: {
+                            500: '#C5A059', // Metallic matte gold
+                            600: '#B08D4C',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Modernist Typography Tweaks */
+        body {
+            letter-spacing: -0.015em;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        h3 {
+            letter-spacing: -0.03em;
+        }
+
+        /* Glassmorphism Navbar */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        /* Smooth Scroll Behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Timeline Connector */
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 24px;
+            width: 2px;
+            background: #e5e7eb;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-800 font-sans">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class=" text-white flex items-center justify-center font-bold text-lg rounded-lg">
+                    <img src="./images/logo/Screenshot (186).png" alt="logo" class="h-[80px] w-auto">
+                </div>
+                <div>
+                    <span class="block text-lg font-bold text-navy-900 leading-none mt-5">Shree Amoluckchand Galada
+                        Jain<br> Higher Secondary School</span>
+                    <span class="block text-[10px] uppercase tracking-wider text-slate-500 font-medium mt-1">School •
+                        Est. 1940</span>
+                </div>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-1">
+                <a href="whyus.html"
+                    class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-navy-900 rounded-full hover:bg-slate-100 transition-all">Why
+                    Us</a>
+                <a href="leadership.html"
+                    class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-navy-900 rounded-full hover:bg-slate-100 transition-all">Leadership</a>
+                <a href="academics.html"
+                    class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-navy-900 rounded-full hover:bg-slate-100 transition-all">Academics</a>
+                <a href="ammenities.html"
+                    class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-navy-900 rounded-full hover:bg-slate-100 transition-all">Infrastructure</a>
+                <a href="sports.html"
+                    class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-navy-900 rounded-full hover:bg-slate-100 transition-all">Sports</a>
+                <a href="contact.html"
+                    class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-navy-900 rounded-full hover:bg-slate-100 transition-all">Contact</a>
+                <a href="admission.html"
+                    class="ml-2 flex items-center gap-2 px-5 py-2.5 bg-navy-900 hover:bg-navy-800 text-white text-sm font-medium rounded-full transition-colors shadow-lg shadow-navy-900/20">
+                    Admissions
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <button id="mobile-menu-button" class="lg:hidden p-2 text-navy-900">
+                <i data-lucide="menu" id="menu-icon"></i>
+                <i data-lucide="x" id="close-icon" class="hidden"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-white border-t border-slate-100 absolute w-full left-0 top-20 shadow-xl overflow-y-auto max-h-[calc(100vh-80px)]">
+            <div class="flex flex-col p-6 gap-4">
+                <a href="whyus.html" class="text-lg font-bold text-navy-900 border-b border-slate-50 pb-2">Why Us</a>
+                <a href="leadership.html"
+                    class="text-lg font-bold text-navy-900 border-b border-slate-50 pb-2">Leadership</a>
+                <a href="academics.html"
+                    class="text-lg font-bold text-navy-900 border-b border-slate-50 pb-2">Academics</a>
+                <a href="ammenities.html"
+                    class="text-lg font-bold text-navy-900 border-b border-slate-50 pb-2">Infrastructure</a>
+                <a href="sports.html" class="text-lg font-bold text-navy-900 border-b border-slate-50 pb-2">Sports</a>
+                <a href="contact.html" class="text-lg font-bold text-navy-900 border-b border-slate-50 pb-2">Contact</a>
+                <a href="admission.html"
+                    class="mt-4 flex items-center justify-center gap-2 px-5 py-4 bg-navy-900 text-white text-lg font-bold rounded-xl shadow-lg">
+                    Admissions <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-6 overflow-hidden bg-slate-50">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+            <div class="relative z-10">
+                <div
+                    class="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-navy-900 text-xs font-bold uppercase tracking-wider mb-8">
+                    <span class="w-3 h-3 rounded-full bg-green-800"></span> Since 1940
+                </div>
+
+                <h1 class="text-5xl lg:text-7xl font-bold text-navy-900 leading-[1.1] mb-6">
+                    Where Learning<br>
+                    <span class="text-slate-400">Meets Legacy.</span>
+                </h1>
+
+                <p class="text-xl text-slate-600 leading-relaxed max-w-lg mb-10 font-normal">
+                    Empowering minds and shaping futures in the heart of Chennai. A legacy of excellence built on
+                    character and innovation.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="whyus.html"
+                        class="px-8 py-4 bg-navy-900 text-white font-bold rounded-lg hover:bg-navy-800 transition-all shadow-xl shadow-navy-900/10 text-center">
+                        Explore Our Story
+                    </a>
+                    <a href="ammenities.html"
+                        class="px-8 py-4 bg-white text-navy-900 border border-slate-200 font-bold rounded-lg hover:bg-slate-50 transition-all text-center">
+                        Virtual Tour
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="aspect-[4/3] bg-slate-200 rounded-2xl overflow-hidden shadow-2xl relative">
+                    <video autoplay muted loop playsinline class="w-full h-full object-cover">
+                        <source src="./videos/14620912_3840_2160_60fps.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/60 to-transparent"></div>
+
+                    <div class="absolute bottom-8 left-8 text-white">
+                        <p class="text-3xl font-bold mb-1">85 Years</p>
+                        <p class="text-sm opacity-90">Of Educational Excellence</p>
+                    </div>
+                </div>
+                <div class="absolute -z-10 -top-10 -right-10 w-64 h-64 bg-gold-500/10 rounded-full blur-3xl"></div>
+                <div class="absolute -z-10 -bottom-10 -left-10 w-64 h-64 bg-navy-900/10 rounded-full blur-3xl"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="heritage" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="bg-white rounded-3xl p-8 lg:p-16 border border-slate-100 shadow-soft">
+            <div class="max-w-3xl">
+                <h2 class="text-navy-900 text-xs font-bold uppercase tracking-widest mb-4">Our Community</h2>
+                <h3 class="text-3xl md:text-5xl font-bold text-navy-900 mb-8 leading-tight">
+                    "A Miniature India."
+                </h3>
+                <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                    From humble beginnings in 1940 to becoming Chennai's most diverse educational institution, our
+                    journey is one of unwavering commitment.
+                    <span class="text-navy-900 font-medium">Unity in Diversity</span> isn't just our principle — it's
+                    our lived reality.
+                </p>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-slate-100 pt-8">
+                    <div>
+                        <div class="text-3xl font-bold text-gold-500 mb-1">1940</div>
+                        <div class="text-xs text-slate-400 font-bold uppercase tracking-wider">Founded</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-gold-500 mb-1">State</div>
+                        <div class="text-xs text-slate-400 font-bold uppercase tracking-wider">Board</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-gold-500 mb-1">100%</div>
+                        <div class="text-xs text-slate-400 font-bold uppercase tracking-wider">Commitment</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-3xl mx-auto relative timeline-line">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-navy-900">Transformation</h2>
+            </div>
+
+            <div class="relative pl-16 mb-12 group">
+                <div
+                    class="absolute left-4 top-1 w-4 h-4 bg-white border-4 border-navy-900 rounded-full z-10 transition-transform group-hover:scale-125">
+                </div>
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-slate-100">
+                    <span class="text-sm font-bold text-gold-500 mb-2 block">1940</span>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">The Beginning</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Founded by visionary philanthropists Shri Amoluckchand Galada and Shri Inderchand Galada with a
+                        mission to serve.
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative pl-16 mb-12 group">
+                <div
+                    class="absolute left-4 top-1 w-4 h-4 bg-white border-4 border-slate-300 rounded-full z-10 transition-colors group-hover:border-navy-900">
+                </div>
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-slate-100">
+                    <span class="text-sm font-bold text-gold-500 mb-2 block">1992</span>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Digital Pioneer</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        We introduced Computer Education, becoming one of the first schools in the region to embrace the
+                        digital future.
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative pl-16 group">
+                <div
+                    class="absolute left-4 top-1 w-4 h-4 bg-navy-900 border-4 border-navy-900 rounded-full z-10 shadow-lg shadow-navy-900/30">
+                </div>
+                <div class="bg-navy-900 p-8 rounded-2xl shadow-xl text-white">
+                    <span class="text-sm font-bold text-gold-500 mb-2 block">2025</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Excellence Today</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Celebrating 85 years of transforming lives. Creating a safe, welcoming environment that nurtures
+                        excellence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="values" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="mb-16 md:flex justify-between items-end">
+            <div>
+                <h2 class="text-navy-900 text-xs font-bold uppercase tracking-widest mb-4">Our Philosophy</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-navy-900">Values That Guide Us</h3>
+            </div>
+            <div class="hidden md:block h-px bg-slate-200 flex-1 ml-12 mb-4"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div
+                class="group p-8 bg-slate-50 hover:bg-white rounded-2xl border border-slate-100 hover:border-slate-200 hover:shadow-soft transition-all duration-300">
+                <div
+                    class="w-12 h-12 bg-white rounded-lg border border-slate-100 flex items-center justify-center text-gold-600 mb-6 shadow-sm">
+                    <i data-lucide="heart" class="w-6 h-6"></i>
+                </div>
+                <h4 class="text-lg font-bold text-navy-900 mb-2">Ahimsa</h4>
+                <p class="text-xs font-bold uppercase text-slate-400 mb-4 tracking-wider">Non-Violence</p>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Compassion for all living beings. Kindness in arm, action, and thought for a harmonious world.
+                </p>
+            </div>
+
+            <div
+                class="group p-8 bg-slate-50 hover:bg-white rounded-2xl border border-slate-100 hover:border-slate-200 hover:shadow-soft transition-all duration-300">
+                <div
+                    class="w-12 h-12 bg-white rounded-lg border border-slate-100 flex items-center justify-center text-gold-600 mb-6 shadow-sm">
+                    <i data-lucide="layers" class="w-6 h-6"></i>
+                </div>
+                <h4 class="text-lg font-bold text-navy-900 mb-2">Anekant</h4>
+                <p class="text-xs font-bold uppercase text-slate-400 mb-4 tracking-wider">Pluralism</p>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Respecting diverse perspectives and valuing every individual’s entry to the collective journey.
+                </p>
+            </div>
+
+            <div
+                class="group p-8 bg-slate-50 hover:bg-white rounded-2xl border border-slate-100 hover:border-slate-200 hover:shadow-soft transition-all duration-300">
+                <div
+                    class="w-12 h-12 bg-white rounded-lg border border-slate-100 flex items-center justify-center text-gold-600 mb-6 shadow-sm">
+                    <i data-lucide="feather" class="w-6 h-6"></i>
+                </div>
+                <h4 class="text-lg font-bold text-navy-900 mb-2">Aparigraha</h4>
+                <p class="text-xs font-bold uppercase text-slate-400 mb-4 tracking-wider">Non-Possession</p>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Simplicity and contentment. Finding joy in being, not having. Freedom from material fetters.
+                </p>
+            </div>
+        </div>
+
+        <div
+            class="mt-8 p-8 bg-gradient-to-r from-emerald-50 to-emerald-100/50 rounded-2xl border border-emerald-100 flex items-start gap-6">
+            <div class="p-3 bg-white rounded-full shadow-sm text-emerald-600">
+                <i data-lucide="leaf" class="w-6 h-6"></i>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold text-emerald-900 mb-1">Vegetarian Campus</h4>
+                <p class="text-emerald-800 text-sm leading-relaxed max-w-2xl">
+                    In alignment with Ahimsa, strictly vegetarian food is permitted on our campus, fostering respect for
+                    all living beings.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-slate-100 pt-20 pb-12 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-navy-900 mb-4">We Learn ★ We Succeed ★ We Lead</h2>
+                <p class="text-slate-500">Shaping the leaders of tomorrow.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center border-t border-slate-100 pt-8 gap-4">
+                <p class="text-xs text-slate-400 font-medium">© 2025 AG Jain Higher Secondary School.</p>
+                <div class="flex gap-6">
+                    <a href="whyus.html" class="text-xs text-slate-500 hover:text-navy-900 font-medium">Why Us</a>
+                    <a href="contact.html" class="text-xs text-slate-500 hover:text-navy-900 font-medium">Contact</a>
+                    <a href="admission.html"
+                        class="text-xs text-slate-500 hover:text-navy-900 font-medium">Admissions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
